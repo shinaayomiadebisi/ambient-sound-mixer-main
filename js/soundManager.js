@@ -10,7 +10,7 @@ export class SoundManager {
       const audio = new Audio();
       audio.src = filePath;
       audio.loop = true;
-      audio.preload = 'metadata';
+      audio.preload = "metadata";
 
       // Add sound to audio elements map
       this.audioElements.set(soundId, audio);
@@ -36,7 +36,7 @@ export class SoundManager {
     }
   }
 
-  // Pause a sepecific sound
+  // Pause a specific sound
   pauseSound(soundId) {
     const audio = this.audioElements.get(soundId);
 
